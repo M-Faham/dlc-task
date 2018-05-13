@@ -10,7 +10,7 @@ Angular 5, Typescript, Bootstrap 4, Bootswatch, [jsonplaceholder.typicode](http:
 
 run `npm install`
 
-## To use the JSON Server use post
+## To use the JSON Server to use post
 
 run `npm install -g json-server`
 
