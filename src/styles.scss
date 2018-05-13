@@ -1,0 +1,7 @@
+@import "~bootswatch/dist/slate/_variables.scss"; // Change the slate variable to any othe bootswatch theme you like
+@import "~bootstrap/scss/bootstrap.scss";
+@import "~bootswatch/dist/slate/_bootswatch.scss"; // change it here also
+
+body{
+    margin-top: 56px; // to keep the body away from the fixed-top nav-bar
+}

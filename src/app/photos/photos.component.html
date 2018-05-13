@@ -1,0 +1,45 @@
+<div class="container-fluid p-0 mb-3 bg-primary text-white">
+  <div class="row">
+
+    <!-- ? used to check if the activeUser isn't undefined-->
+    <div class="ml-4 mx-auto my-auto text-md-left text-center"> {{activeUser?.name}}</div>
+
+    <div class="container my-0 ">
+      <div class=" text-center "> {{activeUser?.email}} </div>
+      <div class=" text-center"> {{activeUser?.phone}} </div>
+    </div>
+
+    <div class="mr-4 mx-auto my-auto "> {{activeUser?.address.suite + " " + activeUser?.address.street + "," + activeUser?.address.city}}</div>
+
+  </div>
+</div>
+
+<p class="text-center font-weight-bold text-white">{{"Album #" + activeAlbum?.id + " : " + activeAlbum?.title}}</p>
+
+
+<div class="container text-white ">
+
+  <hr class="text-white">
+  <div class="row">
+
+    <div class="col-md-4 mb-5" *ngFor="let photo of photos">
+
+      <div class="card h-100">
+
+        <a href="{{photo.url}}"> <!-- href to the photo-->
+          <img class="card-img-top" src="{{photo.thumbnailUrl}}" alt="Card image cap">
+        </a>
+        <div class="card-body  bg-danger text-white text-center ">
+          <h4 class="card-title h-100"> photo: {{photo.id}}</h4>
+        </div>
+        <div class="card-footer  text-white text-center">
+          {{photo.title}}
+        </div>
+      </div>
+
+    </div>
+
+
+
+  </div>
+</div>

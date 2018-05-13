@@ -1,0 +1,50 @@
+<nav class="navbar navbar-expand-sm navbar-light bg-light fixed-top">  <!-- fixed-top class to stay at the top at all time-->
+    <a class="navbar-brand" routerLink="/home">Photos</a>
+
+    <button class="navbar-toggler hidden-lg-up" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavId">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item active">
+                <a class="nav-link" routerLink="/home" routerLinkActive="active">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Packeges</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Offers</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Contact Us</a>
+            </li>
+
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false">
+                    Language (En)
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">English</a>
+                    <a class="dropdown-item" href="#">Arabic</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false">
+                    Currency ($)
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">$</a>
+                    <a class="dropdown-item" href="#">EGP</a>
+                </div>
+            </li>
+        </ul>
+        
+        <div class=" my-2 my-lg-0">
+            <button class="btn btn-outline-success my-2 my-sm-0">Log in</button>
+            <button class="btn btn-outline-success my-2 my-sm-0">Register</button>
+        </div>
+    </div>
+</nav>
